@@ -85,22 +85,22 @@ public class Main {
 			case 1:
 				dir = "east";
 				user1.move_x(dir);
-				map.reload_map(user1.pos_x, user1.pos_y, dir);
+				map.reload_map(before_x, before_y ,user1.pos_x, user1.pos_y);
 				break;
 			case 2:
 				dir = "west";
 				user1.move_x(dir);
-				map.reload_map(user1.pos_x, user1.pos_y, dir);
+				map.reload_map(before_x, before_y, user1.pos_x, user1.pos_y);
 				break;
 			case 3:
 				dir = "south";
 				user1.move_y(dir);
-				map.reload_map(user1.pos_x, user1.pos_y, dir);
+				map.reload_map(before_x,before_y,user1.pos_x, user1.pos_y);
 				break;
 			case 4:
 				dir = "north";
 				user1.move_y(dir);
-				map.reload_map(user1.pos_x, user1.pos_y, dir);
+				map.reload_map(before_x,before_y,user1.pos_x, user1.pos_y);
 				break;
 			}
 			
@@ -174,6 +174,7 @@ public class Main {
 			
 			if(user1.pos_y == 4 && user1.pos_x == 4) {
 				if(user1.key > 0) {
+					map.printmap();
 					System.out.println("탈출 키를 이용하여 탈출에 성공하셨습니다 !!");
 					System.out.println("축하드립니다 !!!");
 					break;
