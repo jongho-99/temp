@@ -1,0 +1,3 @@
+
+module jdbc_CoinGame {
+}
