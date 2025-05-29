@@ -1,0 +1,9 @@
+body {
+    background-color: silver;
+}
+
+form {
+    border: 1px solid grey;
+    padding: 0.5rem;
+    display: inline-block;
+}
